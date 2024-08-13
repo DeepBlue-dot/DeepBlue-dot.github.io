@@ -1,0 +1,8 @@
+.handles-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    @media (max-width:1210px) {
+        display: none;
+    }
+}
