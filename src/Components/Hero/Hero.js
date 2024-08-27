@@ -1,6 +1,7 @@
 import "./Hero.css";
 import { Link } from "react-scroll";
 import me from '../../assets/me.png'
+import Achievement from "../../Commons/Achievement/Achievement";
 
 function Hero() {
   return (
@@ -30,6 +31,11 @@ function Hero() {
         </div>
         <div className="column hero-image">
           <img src={me} alt="profile pic"/>
+        </div>
+      </div>
+      <div className="achievement-cluster">
+        <div className="wrapper">
+          <Achievement/> 
         </div>
       </div>
     </section>
