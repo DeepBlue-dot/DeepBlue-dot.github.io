@@ -1,10 +1,30 @@
 import './Skill.css'
+import {skills} from "../../sources"
+import Skillcard from './SkillCard/SkillCard'
 
 function Skill() {
     return (
-        <h1>
-            Skill
-        </h1>
+        <section id='skill'>
+            <div className='wrapper'>
+                <div className='section-header'>
+                    <h1 className='heading-1'>
+                        <span className='gradient-text'>My Skills</span>
+                    </h1>
+                </div>
+                <div className='skills-container'>
+                    {
+                        skills.map((list, index)=>{
+                            return (
+                                <Skillcard 
+                                {...list}
+                                key={index}
+                                />
+                            )
+                        })
+                    }
+                </div>
+            </div>
+        </section>
     )
 }
 
