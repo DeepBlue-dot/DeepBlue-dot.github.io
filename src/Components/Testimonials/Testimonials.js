@@ -4,7 +4,7 @@ import { clients } from "../../sources";
 import React, { useRef } from "react";
 import { FaStar } from "react-icons/fa6";
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function Testimonials() {
@@ -29,37 +29,41 @@ function Testimonials() {
     <section id="testimonials">
       <div className="wrapper">
         <div className="section-header">
-          <h1 className="heading-1">
+          <h1 className="heading-1" data-aos="fade-left">
             <span className="gradient-text">Testimonials</span>
           </h1>
-          <h4 className="sub-title">What my clients are Saying</h4>
+          <h4 className="sub-title" data-aos="fade-left" data-aos-delay="400">
+            What my clients are Saying
+          </h4>
         </div>
-        <Slider {...settings} className="testimonials-container" ref={ref}>
-          {clients.map((list, index) => {
-            return (
-              <React.Fragment key={index}>
-                <div className="flex">
-                  <div className="profile">
-                    <img src={list.image} alt={list.name} />
+        <div data-aos="fade-right">
+          <Slider {...settings} className="testimonials-container" ref={ref}>
+            {clients.map((list, index) => {
+              return (
+                <React.Fragment key={index}>
+                  <div className="flex">
+                    <div className="profile">
+                      <img src={list.image} alt={list.name} />
+                    </div>
+                    <div className="details">
+                      <h3 className="name">{list.name}</h3>
+                      <small className="muted"> CEO of microBank </small>
+                    </div>
                   </div>
-                  <div className="details">
-                    <h3 className="name">{list.name}</h3>
-                    <small className="muted"> CEO of microBank </small>
+                  <p className="p muted content">{list.review}</p>
+                  <div className="stars-container">
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
                   </div>
-                </div>
-                <p className="p muted content">{list.review}</p>
-                <div className="stars-container">
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                </div>
-              </React.Fragment>
-            );
-          })}
-        </Slider>
-        <div className="flex-center buttons-container">
+                </React.Fragment>
+              );
+            })}
+          </Slider>
+        </div>
+        <div className="flex-center buttons-container"  data-aos='fade-left'>
           <button
             className="flex-center btn"
             onClick={() => ref.current.slickPrev()}

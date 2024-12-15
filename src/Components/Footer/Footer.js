@@ -8,13 +8,13 @@ function Footer() {
   return (
     <footer id="footer">
       <div className="wrapper">
-        <div className="column">
+        <div className="column" data-aos="fade-right">
           <Logo />
           <SocialHandles />
         </div>
         {footer.map((list, index) => {
           return (
-            <div className="column" key={index}>
+            <div className="column" data-aos="fade-right" key={index}>
               <h3 className="muted title">{list.title}</h3>
               {list.routes.map((route, index) => {
                 return (
@@ -37,7 +37,7 @@ function Footer() {
           Copyright &copy; {new Date().getFullYear()} - All rights reserved
         </h4>
         <p className="muted">
-          Built with ❤️ by Yeabsira Fikadu (A.K.A DeepBlue) 
+          Built with ❤️ by Yeabsira Fikadu (A.K.A DeepBlue)
         </p>
       </div>
     </footer>

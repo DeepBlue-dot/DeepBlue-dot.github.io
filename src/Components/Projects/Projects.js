@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import ProjectsCard from "./ProjectsCard/ProjectsCard";
 import ProjectNavigation from "./ProjectNavigation/ProjectNavigation";
 
-function Projects() {
+function  Projects() {
   const [activeProjects, setActiveProjects] = useState(projects);
   const [load,setLoad] = useState(false)
 
@@ -33,7 +33,7 @@ function Projects() {
     setActiveProjects(new_projects)
   }
   return (
-    <section id="projects">
+    <section id="projects" data-aos='fade-right'>
       <div className="wrapper">
         <div className="section-header">
           <h1 className="heading-1">

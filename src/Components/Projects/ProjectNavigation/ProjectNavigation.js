@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./ProjectNavigation.css";
+import Aos from "aos";
 
 function ProjectNavigation({ tabs, onChange }) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -15,9 +16,10 @@ function ProjectNavigation({ tabs, onChange }) {
   };
 
   useEffect(() => {
+    Aos.refreshHard();
     const prevEl = itemsEls.current.filter((_, index) => index < activeIndex);
     setOffset(sumArray(prevEl.map((item) => item.offsetWidth)));
-    setIndicatorWidth(itemsEls.current[activeIndex].offsetWidth)
+    setIndicatorWidth(itemsEls.current[activeIndex].offsetWidth);
   }, [activeIndex]);
 
   return (
@@ -29,6 +31,7 @@ function ProjectNavigation({ tabs, onChange }) {
             onClick={() => {
               setActiveIndex(index);
               onChange(tab);
+              Aos.refreshHard();
             }}
             key={index}
           >

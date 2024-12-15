@@ -7,10 +7,10 @@ function Services() {
     <section id="services">
       <div className="wrapper">
         <div className="section-header">
-          <h1 className="heading-1">
+          <h1 className="heading-1" data-aos='fade-right'>
             <span className="gradient-text">Services</span>
           </h1>
-          <h4 className="sub-title muted">
+          <h4 className="sub-title muted"  data-aos='fade-left'>
             I transform your ideas, ans consequently your desires, into a
             distinctive web project that both inspires you and captivates your
             customers
@@ -19,7 +19,7 @@ function Services() {
         <div className="services-container">
           {services.map((services, index) => {
             return (
-              <div className="service" key={index}>
+              <div className="service" data-aos='fade-left' key={index}>
                 <div className="flex-center icon-wrapper">
                     {services.icon}
                 </div>

@@ -3,7 +3,7 @@ import { BsPatchCheckFill } from "react-icons/bs"
 
 function Skillcard({data, title}) {
     return (
-        <div className="skill-card">
+        <div className="skill-card" data-aos='fade-right'>
             <h3 className="title gradient-text">
                 {title}
             </h3>
