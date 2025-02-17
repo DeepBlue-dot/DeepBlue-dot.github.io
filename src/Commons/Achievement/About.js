@@ -1,17 +1,17 @@
-import "./Achievement.css";
+import "./About.css";
 import React,{useState, useEffect} from "react";
 import Odometer from "react-odometerjs"
 
-function Achievement() {
+function About() {
     const [experience, setExperience] = useState(0);
     const [clients, setClients] = useState(0);
     const [projects, setProjects] = useState(0);
 
     useEffect(()=>{
         const timeOutId =setTimeout(()=>{
-            setClients(421);
-            setExperience(6);
-            setProjects(1.2)
+            setClients(2);
+            setExperience(1);
+            setProjects(10)
         }, 3000)
         return () => clearTimeout(timeOutId)
     })
@@ -45,4 +45,4 @@ function Achievement() {
   );
 }
 
-export default Achievement;
+export default About;

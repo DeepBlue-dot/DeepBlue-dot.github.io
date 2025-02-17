@@ -50,9 +50,9 @@ function Navbar() {
       </div>
       <SocialHandles />
       <div className="box flex-center buttons">
-        <a href={resume} target="_blank" className="btn primary contact-btn" rel="noreferrer">
+        <a href={resume} target="_blank" className="btn primary contact-btn flex-center" rel="noreferrer">
           <MdDownload />
-          <span style={{ marginLeft: 10 }}>Resume</span>
+          <span>Resume</span>
         </a>
         <div
           className="flex-center icon-wrapper menu-btn"

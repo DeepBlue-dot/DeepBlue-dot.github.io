@@ -1,8 +1,5 @@
-import { IoMdAnalytics } from "react-icons/io";
 import { IoCallOutline, IoLocationOutline } from "react-icons/io5";
-import { GrUserExpert } from "react-icons/gr";
-import { MdOutlineSupportAgent, MdOutlineAlternateEmail } from "react-icons/md";
-import { RiExchange2Fill } from "react-icons/ri";
+import { MdOutlineAlternateEmail } from "react-icons/md";
 import { FaGithub} from "react-icons/fa6";
 import { FaLinkedin, FaTelegram } from "react-icons/fa";
 import { DiReact } from "react-icons/di";
@@ -13,34 +10,11 @@ import { TbBrandReactNative } from "react-icons/tb";
 import { SiAdobexd } from "react-icons/si";
 
 export const tabs = [
-  { name: "About", id: "about" },
+  { name: "About", id: "hero" },
   { name: "Skill", id: "skill" },
   { name: "Projects", id: "projects" },
   { name: "Experiences", id: "experiences" },
   { name: "Achievements", id: "achievements" },
-];
-
-export const whyChooseMe = [
-  {
-    title: "Unmatched Local Expertise",
-    icon: <GrUserExpert />,
-    link: "",
-  },
-  {
-    title: "Comprehensive Market Analysise",
-    icon: <IoMdAnalytics />,
-    link: "",
-  },
-  {
-    title: "Dedicated Client Support",
-    icon: <MdOutlineSupportAgent />,
-    link: "",
-  },
-  {
-    title: "Innovative Marketing Strategies",
-    icon: <RiExchange2Fill />,
-    link: "",
-  },
 ];
 
 export const skills = [
