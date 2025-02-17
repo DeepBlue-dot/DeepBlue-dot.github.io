@@ -1,5 +1,5 @@
 .navbar {
-  padding: 10px 20px;
+  padding: 10px 150px;
   align-items: stretch;
   justify-content: space-between;
   border-bottom: .5px solid var(--border-primary);
