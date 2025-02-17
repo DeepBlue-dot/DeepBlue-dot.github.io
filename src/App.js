@@ -8,6 +8,7 @@ import Projects from './Components/Projects/Projects';
 import Skill from './Components/Skill/Skill';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import Experience from './Components/Experiences/Experiences';
 
 function App() {
     useEffect(()=>{
@@ -23,6 +24,7 @@ function App() {
         <Hero/>
         <Skill/>
         <Projects/>
+        <Experience/>
         <Contact/>
         <Footer/>
        </>
