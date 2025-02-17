@@ -1,16 +1,10 @@
-import client1 from "./assets/client-1.jpeg";
-import client2 from "./assets/client-2.jpeg";
-import client3 from "./assets/client-3.jpeg";
-import client4 from "./assets/client-4.jpeg";
-import client5 from "./assets/client-5.jpeg";
 import { IoMdAnalytics} from "react-icons/io";
 import { IoCallOutline ,IoLocationOutline } from "react-icons/io5";
 import { GrUserExpert } from "react-icons/gr";
 import { MdOutlineSupportAgent,MdOutlineAlternateEmail } from "react-icons/md";
 import { RiExchange2Fill } from "react-icons/ri";
-import { FaInstagram, FaXTwitter, FaYoutube,FaLaptopCode} from "react-icons/fa6";
-import { FaFacebookSquare,FaPaintBrush } from "react-icons/fa";
-import { TfiWrite } from 'react-icons/tfi'
+import { FaInstagram, FaXTwitter, FaYoutube} from "react-icons/fa6";
+import { FaFacebookSquare } from "react-icons/fa";
 import {DiReact} from "react-icons/di";
 import {FaNodeJs} from "react-icons/fa";
 import {SiExpress,SiMongodb} from "react-icons/si";
@@ -21,9 +15,7 @@ import { SiAdobexd } from "react-icons/si";
 export const tabs = [
     {name:"About Me",id:'about'},
     {name:"Skill",id:'skill'},
-    {name:"Services",id:'services'},
     {name:"Projects",id:'projects'},
-    {name:"Testimonials",id:'testimonials'},
 ]
 
 export const whyChooseMe = [
@@ -47,30 +39,6 @@ export const whyChooseMe = [
     icon:<RiExchange2Fill/>,
     link:"",
   },
-]
-export const services = [
-  {
-    name:"UI/UX Design",
-    icon:<FaPaintBrush/>,
-    description:`Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione 
-    voluptatum earum quam tempore, repellat aut vero ut eum, provident accusamus recusandae 
-    eligendi, adipisci sequi reiciendis quisquam? Sapiente optio rerum sequi!`,
-  },
-  {
-    name:"Web Development",
-    icon:<FaLaptopCode/>,
-    description:`Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione 
-    voluptatum earum quam tempore, repellat aut vero ut eum, provident accusamus recusandae 
-    eligendi, adipisci sequi reiciendis quisquam? Sapiente optio rerum sequi!`,
-  },
-  {
-    name:"Content Creation",
-    icon:<TfiWrite/>,
-    description:`Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione 
-    voluptatum earum quam tempore, repellat aut vero ut eum, provident accusamus recusandae 
-    eligendi, adipisci sequi reiciendis quisquam? Sapiente optio rerum sequi!`,
-  },
-  
 ]
 
 
@@ -332,48 +300,7 @@ export const projects = [
   },
 ]
 
-export const clients = [
-  {
-    image:client1,
-    name:'Samuel Eze',
-    review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-           veniam, quis nostrud exercitation ullamco laborisveniam, quis nostrud 
-           exercitation ullamco laboris`
-  },
-  {
-    image:client2,
-    name:'Richael Linda',
-    review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`
-  },
-  {
-    image:client3,
-    name:'Gloria Chiwendu',
-    review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-           veniam, quis nostrud exercitation ullamco laborisveniam, quis nostrud 
-           exercitation ullamco laborisveniam, quis nostrud exercitation ullamco laboris`
-  },
-  {
-    image:client4,
-    name:'Precious Stone',
-    review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`
-  },
-  {
-    image:client5,
-    name:'Ndubisi John',
-    review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`
-  },
 
-];
 
 export const contactOptions = [
   {

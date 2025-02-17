@@ -18,7 +18,7 @@ function  Projects() {
   )
   const getTabs = () => {
     const tabs = ["All"];
-    projects.map((item) => {
+    projects.forEach((item) => {
       if (!tabs.includes(item.category)) {
         tabs.push(item.category);
       }

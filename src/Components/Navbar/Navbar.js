@@ -5,7 +5,7 @@ import Logo from "../../Commons/Logo/Logo.js";
 import React, { useState } from "react";
 import { HiMenu } from "react-icons/hi";
 import { FaTimes } from "react-icons/fa";
-import SocialHandles from '../../Commons/SocialHandles/SocialHandles.js'
+import SocialHandles from "../../Commons/SocialHandles/SocialHandles.js";
 
 function Navbar() {
   const [openSidebar, setOpenSidebar] = useState(false);
@@ -33,26 +33,24 @@ function Navbar() {
           <FaTimes />
         </div>
         {tabs.map((tab, index) => (
-          <Link
-            to={tab.id}
-            smooth={true}
-            spy={true}
-            className="tab"
-            activeClass="active"
-            key={index}
-            onClick={() => setOpenSidebar(!openSidebar)}
-          >
-            {tab.name}
-          </Link>
+          <div onClick={() => setOpenSidebar(!openSidebar)}>
+            <Link
+              to={tab.id}
+              smooth={true}
+              spy={true}
+              className="tab"
+              activeClass="active"
+              key={index}
+            >
+              {tab.name}
+            </Link>
+          </div>
         ))}
       </div>
-      <SocialHandles/>
+      <SocialHandles />
       <div className="box flex-center buttons">
         <Link to="contact" smooth={true} className="btn primary contact-btn">
           Hire me
-        </Link>
-        <Link to="services" smooth={true} className="btn services-btn">
-          Services
         </Link>
         <div
           className="flex-center icon-wrapper menu-btn"
