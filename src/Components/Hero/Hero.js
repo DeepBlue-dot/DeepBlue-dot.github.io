@@ -2,7 +2,7 @@ import "./Hero.css";
 import { Link } from "react-scroll";
 import me from "../../assets/me.png";
 import resume from "../../assets/Resume.pdf";
-import About from "../../Commons/Achievement/About";
+import About from "../../Commons/About/About";
 
 function Hero() {
   return (

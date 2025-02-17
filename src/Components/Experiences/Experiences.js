@@ -5,7 +5,7 @@ import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import ExperienceCard from "../../Commons/ExperienceCard/ExperienceCard.js";
 
-const Container = styled.div`
+const Container = styled.section`
 margin-top: 100px;
 display: flex;
 flex-direction: column;
@@ -52,7 +52,7 @@ const Desc = styled.div`
 
 const Experience = () => {
   return (
-    <Container id="Experience">
+    <Container id="experiences">
       <Wrapper>
         <Title>Experience</Title>
         <Desc
