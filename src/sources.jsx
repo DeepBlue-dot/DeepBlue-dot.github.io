@@ -8,6 +8,11 @@ import { SiExpress, SiMongodb } from "react-icons/si";
 import { CgFigma } from "react-icons/cg";
 import { TbBrandReactNative } from "react-icons/tb";
 import { SiAdobexd } from "react-icons/si";
+import client1 from "./assets/client-1.jpeg";
+import client2 from "./assets/client-2.jpeg";
+import client3 from "./assets/client-3.jpeg";
+import client4 from "./assets/client-4.jpeg";
+import client5 from "./assets/client-5.jpeg";
 
 export const tabs = [
   { name: "About", id: "hero" },
@@ -385,6 +390,47 @@ export const experiences = [
   },
 ];
 
+export const clients = [
+  {
+    image: client1,
+    name: "Samuel Eze",
+    review: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+           veniam, quis nostrud exercitation ullamco laborisveniam, quis nostrud 
+           exercitation ullamco laboris`,
+  },
+  {
+    image: client2,
+    name: "Richael Linda",
+    review: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`,
+  },
+  {
+    image: client3,
+    name: "Gloria Chiwendu",
+    review: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+           veniam, quis nostrud exercitation ullamco laborisveniam, quis nostrud 
+           exercitation ullamco laborisveniam, quis nostrud exercitation ullamco laboris`,
+  },
+  {
+    image: client4,
+    name: "Precious Stone",
+    review: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`,
+  },
+  {
+    image: client5,
+    name: "Ndubisi John",
+    review: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`,
+  },
+];
 
 export const contactOptions = [
   {
