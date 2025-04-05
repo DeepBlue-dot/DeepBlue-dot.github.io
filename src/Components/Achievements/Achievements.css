@@ -1,8 +1,8 @@
-#testimonials .testimonials-container {
+#Achievements .Achievements-container {
     margin-top: 20px
 }
 
-#testimonials .slick-track {
+#Achievements .slick-track {
     display: flex!important;
     gap: 20px
 }
@@ -11,7 +11,7 @@
     display: none!important
 }
 
-#testimonials .slick-slide {
+#Achievements .slick-slide {
     height: inherit!important;
     background: var(--bg-accent);
     padding: 40px 30px;
@@ -23,11 +23,11 @@
     transition: var(--transition)
 }
 
-#testimonials .slick-slide:hover {
+#Achievements .slick-slide:hover {
     background: var(--bg-muted)
 }
 
-#testimonials .slick-slide > div {
+#Achievements .slick-slide > div {
     flex: 1;
     display: flex;
     align-items: stretch;
@@ -35,7 +35,7 @@
     flex-direction: column
 }
 
-#testimonials .profile {
+#Achievements .profile {
     width: 4rem;
     height: 4rem;
     border-radius: 10px;
@@ -44,28 +44,28 @@
     transition: var(--transition)
 }
 
-#testimonials .profile:hover {
+#Achievements .profile:hover {
     opacity: .5
 }
 
-#testimonials .content {
+#Achievements .content {
     flex: 1;
     padding: 20px 0
 }
 
-#testimonials .stars-container {
+#Achievements .stars-container {
     display: flex;
     align-items: center;
     gap: 10px;
     color: var(--warning)
 }
 
-#testimonials .buttons-container {
+#Achievements .buttons-container {
     justify-content: flex-end;
     gap: 10px;
     margin-top: 20px
 }
 
-#testimonials .buttons-container .btn:hover {
+#Achievements .buttons-container .btn:hover {
     background: transparent
 }

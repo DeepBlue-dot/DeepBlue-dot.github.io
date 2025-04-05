@@ -9,7 +9,7 @@ import Skill from './Components/Skill/Skill';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import Experience from './Components/Experiences/Experiences';
-import Testimonials from './Components/Achievements/Achievements';
+import Achievements from './Components/Achievements/Achievements';
 
 function App() {
     useEffect(()=>{
@@ -26,7 +26,7 @@ function App() {
         <Skill/>
         <Projects/>
         <Experience/>
-        <Testimonials/>
+        <Achievements/>
         <Contact/>
         <Footer/>
        </>

@@ -7,7 +7,7 @@ import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function Testimonials() {
+function Achievements() {
   const ref = useRef(null);
   const settings = {
     infinite: true,
@@ -26,18 +26,18 @@ function Testimonials() {
     ],
   };
   return (
-    <section id="testimonials">
+    <section id="Achievements">
       <div className="wrapper">
         <div className="section-header">
           <h1 className="heading-1" data-aos="fade-left">
-            <span className="gradient-text">Testimonials</span>
+            <span className="gradient-text">Achievements</span>
           </h1>
           <h4 className="sub-title" data-aos="fade-left" data-aos-delay="400">
             What my clients are Saying
           </h4>
         </div>
         <div data-aos="fade-right">
-          <Slider {...settings} className="testimonials-container" ref={ref}>
+          <Slider {...settings} className="Achievements-container" ref={ref}>
             {clients.map((list, index) => {
               return (
                 <React.Fragment key={index}>
@@ -82,4 +82,4 @@ function Testimonials() {
   );
 }
 
-export default Testimonials;
+export default Achievements;
