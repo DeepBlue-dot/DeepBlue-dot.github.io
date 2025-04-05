@@ -26,7 +26,7 @@ function Achievements() {
     ],
   };
   return (
-    <section id="Achievements">
+    <section id="achievements">
       <div className="wrapper">
         <div className="section-header">
           <h1 className="heading-1" data-aos="fade-left">

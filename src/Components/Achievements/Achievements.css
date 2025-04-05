@@ -1,8 +1,8 @@
-#Achievements .Achievements-container {
+#achievements .Achievements-container {
     margin-top: 20px
 }
 
-#Achievements .slick-track {
+#achievements .slick-track {
     display: flex!important;
     gap: 20px
 }
@@ -11,7 +11,7 @@
     display: none!important
 }
 
-#Achievements .slick-slide {
+#achievements .slick-slide {
     height: inherit!important;
     background: var(--bg-accent);
     padding: 40px 30px;
@@ -23,11 +23,11 @@
     transition: var(--transition)
 }
 
-#Achievements .slick-slide:hover {
+#achievements .slick-slide:hover {
     background: var(--bg-muted)
 }
 
-#Achievements .slick-slide > div {
+#achievements .slick-slide > div {
     flex: 1;
     display: flex;
     align-items: stretch;
@@ -35,7 +35,7 @@
     flex-direction: column
 }
 
-#Achievements .profile {
+#achievements .profile {
     width: 4rem;
     height: 4rem;
     border-radius: 10px;
@@ -44,28 +44,28 @@
     transition: var(--transition)
 }
 
-#Achievements .profile:hover {
+#achievements .profile:hover {
     opacity: .5
 }
 
-#Achievements .content {
+#achievements .content {
     flex: 1;
     padding: 20px 0
 }
 
-#Achievements .stars-container {
+#achievements .stars-container {
     display: flex;
     align-items: center;
     gap: 10px;
     color: var(--warning)
 }
 
-#Achievements .buttons-container {
+#achievements .buttons-container {
     justify-content: flex-end;
     gap: 10px;
     margin-top: 20px
 }
 
-#Achievements .buttons-container .btn:hover {
+#achievements .buttons-container .btn:hover {
     background: transparent
 }
