@@ -141,8 +141,11 @@ export const projects = [
   {
     id: 1,
     title: "AI Powered School",
-    image:
+    images: [
       "https://cdn.dribbble.com/userupload/10064191/file/original-091c06a630285b93a5f81e29e882fe3c.png",
+      "https://cdn.dribbble.com/userupload/10064191/file/original-091c06a630285b93a5f81e29e882fe3c.png",
+      "https://cdn.dribbble.com/userupload/10064191/file/original-091c06a630285b93a5f81e29e882fe3c.png",
+    ],
     category: "UI/UX",
     description: `Transforming education with AI, our School UI Design project revolutionizes the 
                      learning experience. Seamlessly integrating intelligent features, personalized interfaces, 
@@ -161,8 +164,9 @@ export const projects = [
   {
     id: 2,
     title: "E-Commerce Application",
-    image:
+    images: [
       "https://cdn.dribbble.com/userupload/8002230/file/original-c8eec16edea4d5c836b2bfabe7fbaa5a.jpg",
+    ],
     category: "Web",
     description: `Enhance your online shopping experience with our E-Commerce Application 
       UI design project. Seamlessly blending aesthetics with functionality, our intuitive 
@@ -195,8 +199,10 @@ export const projects = [
   {
     id: 3,
     title: "Robotic Engineering Web Application",
-    image:
+    images: [
       "https://s3-alpha.figma.com/hub/file/5101537097/c4a1ed2c-4ab9-43fb-a248-d7ac6b0c3161-cover.png",
+      "https://s3-alpha.figma.com/hub/file/5101537097/c4a1ed2c-4ab9-43fb-a248-d7ac6b0c3161-cover.png",
+    ],
     category: "Web",
     description: `Unlock the future of robotics with our Robotic Engineering Web Application
       project. Seamlessly integrating cutting-edge technology, data analytics, 
@@ -241,8 +247,9 @@ export const projects = [
   {
     id: 4,
     title: "Project Management application",
-    image:
+    images: [
       "https://miro.medium.com/v2/resize:fit:1400/1*6iO0wm8q4cByvxY6kB9WiQ.png",
+    ],
     category: "Apps",
     description: `Simplify project coordination with our intuitive Project Management application. Track tasks, collaborate in real-time, and streamline workflows effortlessly. With customizable features and robust reporting, stay organized and efficient.
                      Elevate your project management experience and achieve success with ease.`,
@@ -272,8 +279,9 @@ export const projects = [
   {
     id: 5,
     title: "Mobile bank - App Design",
-    image:
+    images: [
       "https://i.pinimg.com/originals/a0/be/c3/a0bec3706210e6ab28470eee95bf5889.png",
+    ],
     category: "UI/UX",
     description: `Experience banking at your fingertips with our sleek Mobile Bank app design. Seamlessly manage your finances on-the-go with intuitive navigation, secure transactions, and personalized insights. Enjoy a modern interface that prioritizes convenience and accessibility, revolutionizing your banking experience.`,
     demoLink: "https://google.com/",
@@ -288,8 +296,9 @@ export const projects = [
   {
     id: 6,
     title: "Quiz App Development",
-    image:
+    images: [
       "https://i.pinimg.com/originals/b3/35/02/b33502e465346ace2a7f1df203d851a3.jpg",
+    ],
     category: "Apps",
     description: `Elevate engagement and knowledge retention with our Quiz App 
                     Development project. Seamlessly crafted for interactive learning 
@@ -379,7 +388,7 @@ export const experiences = [
       "Firebase",
       "Figma",
     ],
-    doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/WhatsApp%20Image%202023-05-05%20at%2012.07.39%20AM.jpeg?alt=media&token=9f0e1648-568b-422d-bd0b-1f125f722245",
+    doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/WhatsApp%20Images%202023-05-05%20at%2012.07.39%20AM.jpeg?alt=media&token=9f0e1648-568b-422d-bd0b-1f125f722245",
   },
   {
     id: 3,

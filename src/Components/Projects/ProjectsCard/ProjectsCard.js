@@ -1,19 +1,43 @@
 import "./ProjectsCard.css";
 import { AiOutlineShareAlt } from "react-icons/ai";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 
 function ProjectsCard({
   title,
-  image,
+  images, // Changed from image to images (array)
   description,
   stack,
   demoLink,
   className,
 }) {
+  // Slider settings configuration
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
+
   return (
     <div className={`project-card ${className ? className : ""}`}>
       <div className="picture">
-        <img src={image} alt={title} />
+        <Slider {...sliderSettings}>
+          {images.map((imgSrc, index) => (
+            <div key={index}>
+              <img src={imgSrc} alt={`${title} - ${index + 1}`} />
+            </div>
+          ))}
+        </Slider>
       </div>
+      {/* Rest of the component remains same */}
       <div className="details">
         <div className="top">
           <h2 className="title">{title}</h2>
@@ -26,27 +50,27 @@ function ProjectsCard({
             <div className="stack-left">Stack</div>
             <div className="stack-right">
               <div className="stack-box-container">
-                {stack.map((list, index) => {
-                  return (
-                    <div className="stack-box" key={index}>
-                      <div className="stack-icon-container">
-                        <span 
+                {stack.map((list, index) => (
+                  <div className="stack-box" key={index}>
+                    <div className="stack-icon-container">
+                      <span 
                         className="flex-center stack-icon" 
-                        style={{color:list.iconColor }}>
-                            {list.icon}
-                        </span>
-                        <span className="stack-name">{list.name}</span>
-                      </div>
+                        style={{ color: list.iconColor }}>
+                        {list.icon}
+                      </span>
+                      <span className="stack-name">{list.name}</span>
                     </div>
-                  );
-                })}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
           <div className="flex-center buttons-container">
-            <a href={demoLink} target="_blank" className="btn primary" rel="noreferrer">Demo</a>
+            <a href={demoLink} target="_blank" className="btn primary" rel="noreferrer">
+              Demo
+            </a>
             <div className="flex-center btn btn-share">
-                <AiOutlineShareAlt/>
+              <AiOutlineShareAlt />
             </div>
           </div>
         </div>
