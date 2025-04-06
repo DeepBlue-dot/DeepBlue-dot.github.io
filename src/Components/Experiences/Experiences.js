@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { experiences } from "../../sources.jsx";
+import { experiences } from "../../sources.js";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import ExperienceCard from "../../Commons/ExperienceCard/ExperienceCard.js";

@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import { tabs } from "../../sources.jsx";
+import { tabs } from "../../sources.js";
 import { Link } from "react-scroll";
 import Logo from "../../Commons/Logo/Logo.js";
 import React, { useState } from "react";

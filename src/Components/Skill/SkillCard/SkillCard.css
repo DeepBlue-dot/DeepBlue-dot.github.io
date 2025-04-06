@@ -4,6 +4,7 @@
     transition: var(--transition);
     border-radius: 20px;
     background: var(--bg-accent);
+    max-width: 400px;
 }
 
 .skill-card:hover {
@@ -21,6 +22,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 2rem;
+    column-gap: 3rem;
 }
 
 .skill-card .skill-details {
@@ -28,24 +30,18 @@
     gap: 1rem
 }
 .skill-card .skill-icon {
-    margin-top: 6px;
-    color: var(--primary);
+    font-size: 1.75rem;
+    display: flex;
+    align-items: center;
 }
 .skill-card .skill-details .skill-name {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 500;
-}
-
-.skill-card .skill-details .skill-level {
-    font-size: 14px;
 }
 
 @media (max-width:350px) {
     .skill-card .skill-details .skill-name {
         font-size: 12px;
-    }
-    .skill-card .skill-details .skill-level {
-        font-size: 10px;
     }
 
 }

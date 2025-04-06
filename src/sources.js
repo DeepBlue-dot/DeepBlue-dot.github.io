@@ -3,11 +3,33 @@ import { MdOutlineAlternateEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin, FaTelegram } from "react-icons/fa";
 import { DiReact } from "react-icons/di";
-import { FaNodeJs } from "react-icons/fa";
-import { SiExpress, SiMongodb } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
 import { CgFigma } from "react-icons/cg";
 import { TbBrandReactNative } from "react-icons/tb";
 import { SiAdobexd } from "react-icons/si";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaReact,
+  FaNodeJs,
+  FaPython,
+  FaFigma,
+  FaDocker,
+  FaGitAlt,
+  FaLinux,
+} from "react-icons/fa";
+import {
+  SiJavascript,
+  SiTailwindcss,
+  SiBootstrap,
+  SiTypescript,
+  SiPhp,
+  SiMysql,
+  SiMongodb,
+  SiFlutter,
+} from "react-icons/si";
+import { DiJava, DiTerminal } from "react-icons/di";
+
 import client1 from "./assets/client-1.jpeg";
 import client2 from "./assets/client-2.jpeg";
 import client3 from "./assets/client-3.jpeg";
@@ -28,31 +50,31 @@ export const skills = [
     data: [
       {
         skill: "HTML",
-        level: "Experienced",
+        icon: <FaHtml5 color="#e34f26" />,
       },
       {
         skill: "CSS",
-        level: "Experienced",
+        icon: <FaCss3Alt color="#1572B6" />,
       },
       {
         skill: "JavaScript",
-        level: "Experienced",
+        icon: <SiJavascript color="#f7df1e" />,
       },
       {
         skill: "Tailwind",
-        level: "Intermediate",
+        icon: <SiTailwindcss color="#06b6d4" />,
       },
       {
         skill: "Bootstrap",
-        level: "Experienced",
+        icon: <SiBootstrap color="#7952B3" />,
       },
       {
         skill: "React",
-        level: "Experienced",
+        icon: <FaReact color="#61DAFB" />,
       },
       {
-        skill: "React Native",
-        level: "Experienced",
+        skill: "Flutter",
+        icon: <SiFlutter color="#02569B" />,
       },
     ],
   },
@@ -61,23 +83,31 @@ export const skills = [
     data: [
       {
         skill: "Node JS",
-        level: "Experienced",
+        icon: <FaNodeJs color="#339933" />,
       },
       {
-        skill: "MangoDB",
-        level: "Intermediate",
+        skill: "TypeScript",
+        icon: <SiTypescript color="#3178c6" />,
       },
       {
-        skill: "PHP",
-        level: "Experienced",
+        skill: "Java",
+        icon: <DiJava color="#f89820" />,
       },
       {
         skill: "Python",
-        level: "Intermediate",
+        icon: <FaPython color="#3776AB" />,
+      },
+      {
+        skill: "PHP",
+        icon: <SiPhp color="#777BB4" />,
       },
       {
         skill: "MySQL",
-        level: "Experienced",
+        icon: <SiMysql color="#4479A1" />,
+      },
+      {
+        skill: "MongoDB",
+        icon: <SiMongodb color="#47A248" />,
       },
     ],
   },
@@ -86,20 +116,27 @@ export const skills = [
     data: [
       {
         skill: "Figma",
-        level: "Experienced",
+        icon: <FaFigma color="#F24E1E" />,
       },
       {
-        skill: "Sketch",
-        level: "Intermediate",
+        skill: "Docker",
+        icon: <FaDocker color="#2496ED" />,
       },
       {
-        skill: "XD",
-        level: "Intermediate",
+        skill: "Git",
+        icon: <FaGitAlt color="#F05032" />,
+      },
+      {
+        skill: "Linux",
+        icon: <FaLinux color="#FCC624" />,
+      },
+      {
+        skill: "Bash",
+        icon: <DiTerminal color="#4EAA25" />,
       },
     ],
   },
 ];
-
 export const projects = [
   {
     id: 1,
