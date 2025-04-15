@@ -6,7 +6,6 @@ import { DiReact } from "react-icons/di";
 import { SiExpress } from "react-icons/si";
 import { CgFigma } from "react-icons/cg";
 import { TbBrandReactNative } from "react-icons/tb";
-import { SiAdobexd } from "react-icons/si";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -140,40 +139,53 @@ export const skills = [
 export const projects = [
   {
     id: 1,
-    title: "AI Powered School",
+    title: "FilmLane",
     images: [
-      "https://cdn.dribbble.com/userupload/10064191/file/original-091c06a630285b93a5f81e29e882fe3c.png",
-      "https://cdn.dribbble.com/userupload/10064191/file/original-091c06a630285b93a5f81e29e882fe3c.png",
-      "https://cdn.dribbble.com/userupload/10064191/file/original-091c06a630285b93a5f81e29e882fe3c.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/FilmLane/refs/heads/main/assets/pelicula_1_png%20by%20Ramiro.jpeg",
+      "https://raw.githubusercontent.com/DeepBlue-dot/FilmLane/refs/heads/main/assets/pelicula_1_png%20by%20Ramiro.jpeg",
     ],
-    category: "UI/UX",
-    description: `Transforming education with AI, our School UI Design project revolutionizes the 
-                     learning experience. Seamlessly integrating intelligent features, personalized interfaces, 
-                     and intuitive navigation, our design empowers educators and students alike. Experience 
-                     innovation at its finest as we pave the way for a smarter, more efficient educational 
-                     journey.`,
-    demoLink: "https://google.com/",
+    category: "Web",
+    description: `This modern movie streaming platform harnesses TMDB's extensive data to deliver real-time browsing of movies and TV shows. 
+                  Crafted with TypeScript, React, and Node.js, it features secure JWT authentication, personalized watchlists, and a resume-enabled watch history. 
+                  Its responsive UI, and robust backend with Express, Prisma, and MySQL create an engaging user experience.`,
+    demoLink: "https://github.com/DeepBlue-dot/FilmLane",
     stack: [
       {
-        name: "XD",
-        icon: <SiAdobexd />,
+        name: "ReactJs",
+        icon: <DiReact />,
         iconColor: "skyblue",
+      },
+      {
+        name: "NodeJs",
+        icon: <FaNodeJs />,
+        iconColor: "green",
+      },
+      {
+        name: "ExpressJs",
+        icon: <SiExpress />,
+      },
+      {
+        name: "MySQL",
+        icon: <SiMysql color="#4479A1" />,
       },
     ],
   },
   {
-    id: 2,
-    title: "E-Commerce Application",
+    id: 1,
+    title: "PicShare",
     images: [
-      "https://cdn.dribbble.com/userupload/8002230/file/original-c8eec16edea4d5c836b2bfabe7fbaa5a.jpg",
+      "https://raw.githubusercontent.com/DeepBlue-dot/PicShare/refs/heads/main/assets/ScreenShot%20Tool%20-20250415050629.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/PicShare/refs/heads/main/assets/ScreenShot%20Tool%20-20250415050700.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/PicShare/refs/heads/main/assets/ScreenShot%20Tool%20-20250415050747.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/PicShare/refs/heads/main/assets/ScreenShot%20Tool%20-20250415050759.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/PicShare/refs/heads/main/assets/ScreenShot%20Tool%20-20250415050900.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/PicShare/refs/heads/main/assets/ScreenShot%20Tool%20-20250415050921.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/PicShare/refs/heads/main/assets/ScreenShot%20Tool%20-20250415050932.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/PicShare/refs/heads/main/assets/ScreenShot%20Tool%20-20250415051011.png"
     ],
     category: "Web",
-    description: `Enhance your online shopping experience with our E-Commerce Application 
-      UI design project. Seamlessly blending aesthetics with functionality, our intuitive 
-      interface offers easy navigation, personalized recommendations, and secure 
-      transactions. Elevate your digital storefront and captivate customers with a visually 
-      stunning design tailored to your brand`,
-    demoLink: "https://google.com/",
+    description: `A full-stack web application inspired by Pinterest, built with React (frontend), Node.js (backend), and MongoDB (database). This project allows users to create, view, like, and save posts with images, as well as organize them into boards.`,
+    demoLink: "https://github.com/DeepBlue-dot/PicShare",
     stack: [
       {
         name: "ReactJs",
@@ -197,8 +209,8 @@ export const projects = [
     ],
   },
   {
-    id: 3,
-    title: "Robotic Engineering Web Application",
+    id: 1,
+    title: "VibeCall",
     images: [
       "https://s3-alpha.figma.com/hub/file/5101537097/c4a1ed2c-4ab9-43fb-a248-d7ac6b0c3161-cover.png",
       "https://s3-alpha.figma.com/hub/file/5101537097/c4a1ed2c-4ab9-43fb-a248-d7ac6b0c3161-cover.png",
@@ -209,7 +221,7 @@ export const projects = [
       and collaborative tools, our platform empowers engineers to design, simulate, 
       and optimize robotic systems. Experience innovation at its peak as we redefine the 
       boundaries of robotic engineering.`,
-    demoLink: "https://google.com/",
+    demoLink: "https://github.com/DeepBlue-dot/PicShare",
     stack: [
       {
         name: "ReactJs",
@@ -225,77 +237,90 @@ export const projects = [
         name: "ExpressJs",
         icon: <SiExpress />,
       },
-      {
-        name: "MongoDB",
-        icon: <SiMongodb />,
-        iconColor: "limegreen",
-      },
-      {
-        name: "MongoDBT",
-        icon: <SiMongodb />,
-      },
-      {
-        name: "MongoDBT",
-        icon: <SiMongodb />,
-      },
-      {
-        name: "MongoDBT",
-        icon: <SiMongodb />,
-      },
     ],
   },
   {
-    id: 4,
-    title: "Project Management application",
+    id: 1,
+    title: "BioTech-WebSite",
     images: [
-      "https://miro.medium.com/v2/resize:fit:1400/1*6iO0wm8q4cByvxY6kB9WiQ.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/BioTech-WebSite/refs/heads/main/resource/design/done/ScreenShot%20Tool%20-20250415045931.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/BioTech-WebSite/refs/heads/main/resource/design/done/ScreenShot%20Tool%20-20250415050026.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/BioTech-WebSite/refs/heads/main/resource/design/done/ScreenShot%20Tool%20-20250415050049.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/BioTech-WebSite/refs/heads/main/resource/design/done/ScreenShot%20Tool%20-20250415050118.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/BioTech-WebSite/refs/heads/main/resource/design/done/ScreenShot%20Tool%20-20250415050140.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/BioTech-WebSite/refs/heads/main/resource/design/done/ScreenShot%20Tool%20-20250415050158.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/BioTech-WebSite/refs/heads/main/resource/design/done/ScreenShot%20Tool%20-20250415050224.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/BioTech-WebSite/refs/heads/main/resource/design/done/ScreenShot%20Tool%20-20250415050249.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/BioTech-WebSite/refs/heads/main/resource/design/done/ScreenShot%20Tool%20-20250415050300.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/BioTech-WebSite/refs/heads/main/resource/design/done/ScreenShot%20Tool%20-20250415050314.png"
     ],
-    category: "Apps",
-    description: `Simplify project coordination with our intuitive Project Management application. Track tasks, collaborate in real-time, and streamline workflows effortlessly. With customizable features and robust reporting, stay organized and efficient.
-                     Elevate your project management experience and achieve success with ease.`,
-    demoLink: "https://google.com/",
+    category: "Web",
+    description: `A modern, responsive website for the BioTech Research Institute, designed to showcase ongoing research, achievements, team members, and key updates in biotechnology. 
+                  Built using HTML, CSS, and JavaScript, this website serves as a central hub for researchers, collaborators, and the public to stay informed about groundbreaking advancements in the field.`,
+    demoLink: "https://deepblue-dot.github.io/BioTech-WebSite/",
     stack: [
       {
-        name: "React Native",
-        icon: <TbBrandReactNative />,
-        iconColor: "skyblue",
-      },
-      {
-        name: "NodeJs",
-        icon: <FaNodeJs />,
+        name: "HTML",
+        icon: <FaHtml5 color="#e34f26" />,
         iconColor: "green",
       },
       {
-        name: "ExpressJs",
-        icon: <SiExpress />,
+        name: "CSS",
+        icon: <FaCss3Alt color="#1572B6" />,
+        iconColor: "green",
       },
       {
-        name: "MongoDB",
-        icon: <SiMongodb />,
-        iconColor: "limegreen",
-      },
+        name: "JavaScript",
+        icon: <SiJavascript color="#f7df1e" />,
+        iconColor: "green",
+      }
     ],
   },
   {
-    id: 5,
-    title: "Mobile bank - App Design",
+    id: 2,
+    title: "ID-card-Replacement-system",
     images: [
-      "https://i.pinimg.com/originals/a0/be/c3/a0bec3706210e6ab28470eee95bf5889.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/ID-card-Replacement-system/refs/heads/main/about/images/2025-04-15_12-23.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/ID-card-Replacement-system/refs/heads/main/about/images/2025-04-15_12-25.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/ID-card-Replacement-system/refs/heads/main/about/images/2025-04-15_12-25_1.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/ID-card-Replacement-system/refs/heads/main/about/images/2025-04-15_12-26.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/ID-card-Replacement-system/refs/heads/main/about/images/2025-04-15_12-26_1.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/ID-card-Replacement-system/refs/heads/main/about/images/2025-04-15_12-28.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/ID-card-Replacement-system/refs/heads/main/about/images/2025-04-15_12-28_1.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/ID-card-Replacement-system/refs/heads/main/about/images/2025-04-15_12-28_2.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/ID-card-Replacement-system/refs/heads/main/about/images/2025-04-15_12-29.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/ID-card-Replacement-system/refs/heads/main/about/images/2025-04-15_12-30.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/ID-card-Replacement-system/refs/heads/main/about/images/2025-04-15_12-30_1.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/ID-card-Replacement-system/refs/heads/main/about/images/2025-04-15_12-32.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/ID-card-Replacement-system/refs/heads/main/about/images/2025-04-15_12-32_1.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/ID-card-Replacement-system/refs/heads/main/about/images/2025-04-15_12-33.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/ID-card-Replacement-system/refs/heads/main/about/images/2025-04-15_12-33_1.png",
     ],
-    category: "UI/UX",
-    description: `Experience banking at your fingertips with our sleek Mobile Bank app design. Seamlessly manage your finances on-the-go with intuitive navigation, secure transactions, and personalized insights. Enjoy a modern interface that prioritizes convenience and accessibility, revolutionizing your banking experience.`,
-    demoLink: "https://google.com/",
+    category: "Apps",
+    description: `The ID Card Replacement (Appointment) System for AASTU Students aims to streamline the process of replacing lost or damaged ID cards at AASTU. The current process is often cumbersome and time-consuming for both students and administrative staff. This system aims to modernize and simplify the process, improving the overall student experience and administrative efficiency.`,
+    demoLink: "https://github.com/DeepBlue-dot/ID-card-Replacement-system/",
     stack: [
       {
-        name: "Figma",
-        icon: <CgFigma />,
-        iconColor: "orangered",
+        name: "Java",
+        icon: <DiJava color="#f89820" />,
       },
+      {
+        name: "JavaFX",
+        icon: <DiJava color="#f89820" />,
+      },
+      {
+        name: "Undertow",
+        icon: <DiJava color="#f89820" />,
+      },
+      {
+        name: "MySQL",
+        icon: <SiMysql color="#4479A1" />,
+      }
     ],
   },
   {
-    id: 6,
-    title: "Quiz App Development",
+    id: 2,
+    title: "Futter-App",
     images: [
       "https://i.pinimg.com/originals/b3/35/02/b33502e465346ace2a7f1df203d851a3.jpg",
     ],
@@ -306,26 +331,15 @@ export const projects = [
                     and captivating visuals. Empower users to test their knowledge anytime,
                      anywhere, fostering a dynamic learning environment tailored to their 
                      needs.`,
-    demoLink: "https://google.com/",
+    demoLink: "https://github.com/DeepBlue-dot/futter-first-app",
     stack: [
       {
-        name: "React Native",
-        icon: <TbBrandReactNative />,
-        iconColor: "skyblue",
+        name: "Flutter",
+        icon: <SiFlutter color="#02569B" />,
       },
       {
-        name: "NodeJs",
-        icon: <FaNodeJs />,
-        iconColor: "green",
-      },
-      {
-        name: "ExpressJs",
-        icon: <SiExpress />,
-      },
-      {
-        name: "MongoDB",
-        icon: <SiMongodb />,
-        iconColor: "limegreen",
+        name: "Figma",
+        icon: <FaFigma color="#F24E1E" />,
       },
     ],
   },

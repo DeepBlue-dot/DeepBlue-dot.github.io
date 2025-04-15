@@ -1,6 +1,6 @@
 import "./Hero.css";
 import { Link } from "react-scroll";
-import me from "../../assets/me.png";
+import me from "../../assets/my-profile-pic-2.png";
 import resume from "../../assets/Resume.pdf";
 import About from "../../Commons/About/About";
 

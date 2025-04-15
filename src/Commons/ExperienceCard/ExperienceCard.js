@@ -1,90 +1,6 @@
 import React from "react";
-import styled from "styled-components";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
-
-const Top = styled.div`
-  width: 100%;
-  display: flex;
-  max-width: 100%;
-  gap: 12px;
-`;
-const Image = styled.img`
-  height: 50px;
-  border-radius: 10px;
-  margin-top: 4px;
-
-  @media only screen and (max-width: 768px) {
-    height: 40px;
-  }
-`;
-const Body = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-`;
-
-const Role = styled.div`
-  font-size: 18px;
-  font-weight: 600px;
-  color: ${({ theme }) => theme.text_primary + 99};
-
-  @media only screen and (max-width: 768px) {
-    font-size: 14px;
-  }
-`;
-const Company = styled.div`
-  font-size: 14px;
-  font-weight: 500px;
-  color: ${({ theme }) => theme.text_secondary + 99};
-
-  @media only screen and (max-width: 768px) {
-    font-size: 12px;
-  }
-`;
-const Date = styled.div`
-  font-size: 12px;
-  font-weight: 400px;
-  color: ${({ theme }) => theme.text_secondary + 80};
-
-  @media only screen and (max-width: 768px) {
-    font-size: 10px;
-  }
-`;
-
-const Description = styled.div`
-  width: 100%;
-  font-size: 15px;
-  font-weight: 400;
-  color: ${({ theme }) => theme.text_primary + 99};
-  margin-bottom: 10px;
-  @media only screen and (max-width: 768px) {
-    font-size: 12px;
-  }
-`;
-const Span = styled.div`
-  display: -webkit-box;
-  max-width: 100%;
-`;
-const Skills = styled.div`
-  width: 100%;
-  display: flex;
-  gap: 12px;
-  margin-top: -10px;
-`;
-const Skill = styled.div`
-  font-size: 15px;
-  font-weight: 400;
-  color: ${({ theme }) => theme.text_primary + 99};
-  @media only screen and (max-width: 768px) {
-    font-size: 12px;
-  }
-`;
-
-const ItemWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-`;
+import "./ExperienceCard.css"; // Import the separated CSS file
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -105,7 +21,6 @@ const ExperienceCard = ({ experience }) => {
         background: "#1d1836",
         color: "#fff",
         boxShadow: "rgba(23, 92, 230, 0.15) 0px 4px 24px",
-        // backdropFilter: "blur(3px) saturate(106%)",
         backgroundColor: "rgba(17, 25, 40, 0.83)",
         border: "1px solid rgba(255, 255, 255, 0.125)",
         borderRadius: "6px",
@@ -115,30 +30,32 @@ const ExperienceCard = ({ experience }) => {
       }}
       date={experience.date}
     >
-      <Top>
-        <Image src={experience.img} />
-        <Body>
-          <Role>{experience.role}</Role>
-          <Company>{experience.company}</Company>
-          <Date>{experience.date}</Date>
-        </Body>
-      </Top>
-      <Description>
-        {experience?.desc && <Span>{experience?.desc}</Span>}
+      <div className="top">
+        <img className="image" src={experience.img} alt={experience.school} />
+        <div className="body">
+          <div className="role">{experience.role}</div>
+          <div className="company">{experience.company}</div>
+          <div className="date">{experience.date}</div>
+        </div>
+      </div>
+      <div className="description">
+        {experience?.desc && <div className="span">{experience.desc}</div>}
         {experience?.skills && (
           <>
             <br />
-            <Skills>
+            <div className="skills">
               <b>Skills:</b>
-              <ItemWrapper>
-                {experience?.skills?.map((skill, index) => (
-                  <Skill>• {skill}</Skill>
+              <div className="item-wrapper">
+                {experience.skills.map((skill, index) => (
+                  <div key={index} className="skill">
+                    • {skill}
+                  </div>
                 ))}
-              </ItemWrapper>
-            </Skills>
+              </div>
+            </div>
           </>
         )}
-      </Description>
+      </div>
     </VerticalTimelineElement>
   );
 };
