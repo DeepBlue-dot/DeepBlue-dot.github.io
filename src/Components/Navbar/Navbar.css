@@ -68,6 +68,9 @@
 }
 
 @media (max-width: 930px) {
+  .navbar {
+    padding: 10px 15px;
+  }
   .navbar .sidebar {
       position:fixed;
       top: 0;
