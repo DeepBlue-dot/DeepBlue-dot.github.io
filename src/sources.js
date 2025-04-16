@@ -470,16 +470,16 @@ export const footer = [
   {
     title: "Explore",
     routes: [
-      { name: "About Me", id: "about" },
+      { name: "About", id: "hero" },       // Updated from "About Me" to "About" with hero ID
       { name: "Skill", id: "skill" },
     ],
   },
   {
     title: "Trusted",
     routes: [
-      { name: "Services", id: "services" },
       { name: "Projects", id: "projects" },
-      { name: "Achievements", id: "Achievements" },
+      { name: "Experiences", id: "experiences" }, // Added new experiences section
+      { name: "Achievements", id: "achievements" }, // Fixed casing to match tabs
     ],
   },
   {
