@@ -3,9 +3,8 @@ import { MdOutlineAlternateEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin, FaTelegram } from "react-icons/fa";
 import { DiReact } from "react-icons/di";
-import { SiExpress } from "react-icons/si";
-import { CgFigma } from "react-icons/cg";
-import { TbBrandReactNative } from "react-icons/tb";
+import { SiExpress, SiJsonwebtokens, SiMongoose, SiNextdotjs, SiPrisma, SiSocketdotio, SiWebrtc } from "react-icons/si";
+
 import {
   FaHtml5,
   FaCss3Alt,
@@ -108,6 +107,10 @@ export const skills = [
         skill: "MongoDB",
         icon: <SiMongodb color="#47A248" />,
       },
+      {
+        skill: "Prisma",
+        icon: <SiPrisma />
+      },
     ],
   },
   {
@@ -149,6 +152,7 @@ export const projects = [
                   Crafted with TypeScript, React, and Node.js, it features secure JWT authentication, personalized watchlists, and a resume-enabled watch history. 
                   Its responsive UI, and robust backend with Express, Prisma, and MySQL create an engaging user experience.`,
     demoLink: "https://github.com/DeepBlue-dot/FilmLane",
+    githubLink: "https://github.com/DeepBlue-dot/FilmLane",
     stack: [
       {
         name: "ReactJs",
@@ -168,6 +172,15 @@ export const projects = [
         name: "MySQL",
         icon: <SiMysql color="#4479A1" />,
       },
+      {
+        name: "TypeScript",
+        icon: <SiTypescript />,
+        iconColor: "#3178C6",
+      },
+      {
+        name: "Prisma",
+        icon: <SiPrisma />,
+      }
     ],
   },
   {
@@ -186,6 +199,7 @@ export const projects = [
     category: "Web",
     description: `A full-stack web application inspired by Pinterest, built with React (frontend), Node.js (backend), and MongoDB (database). This project allows users to create, view, like, and save posts with images, as well as organize them into boards.`,
     demoLink: "https://github.com/DeepBlue-dot/PicShare",
+    githubLink: "https://github.com/DeepBlue-dot/PicShare",
     stack: [
       {
         name: "ReactJs",
@@ -206,36 +220,52 @@ export const projects = [
         icon: <SiMongodb />,
         iconColor: "limegreen",
       },
+      {
+        name: "MongoDB",
+        icon: <SiMongoose />,
+        iconColor: "#000000",
+      },
+      {
+        name: "Jsonwebtokens",
+        icon: <SiJsonwebtokens />        ,
+      },
     ],
   },
   {
     id: 1,
     title: "VibeCall",
     images: [
-      "https://s3-alpha.figma.com/hub/file/5101537097/c4a1ed2c-4ab9-43fb-a248-d7ac6b0c3161-cover.png",
-      "https://s3-alpha.figma.com/hub/file/5101537097/c4a1ed2c-4ab9-43fb-a248-d7ac6b0c3161-cover.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/VibeCall/refs/heads/main/assets/vibecall-UI.png",
     ],
     category: "Web",
-    description: `Unlock the future of robotics with our Robotic Engineering Web Application
-      project. Seamlessly integrating cutting-edge technology, data analytics, 
-      and collaborative tools, our platform empowers engineers to design, simulate, 
-      and optimize robotic systems. Experience innovation at its peak as we redefine the 
-      boundaries of robotic engineering.`,
+    description: `A minimalist 1:1 video calling platform using WebRTC for peer-to-peer video/audio and Next.js API routes for signaling (no separate server). 
+                  Features device selection, real-time chat, and connection status tracking.`,
     demoLink: "https://github.com/DeepBlue-dot/PicShare",
+    githubLink: "https://github.com/DeepBlue-dot/PicShare",
     stack: [
       {
-        name: "ReactJs",
-        icon: <DiReact />,
-        iconColor: "skyblue",
+        name: "Next.js",
+        icon: <SiNextdotjs />,
+        iconColor: "#000000",
       },
       {
-        name: "NodeJs",
-        icon: <FaNodeJs />,
-        iconColor: "green",
+        name: "WebRTC",
+        icon: <SiWebrtc />,
+        iconColor: "#333333",
       },
       {
-        name: "ExpressJs",
-        icon: <SiExpress />,
+        name: "Socket.IO",
+        icon: <SiSocketdotio />,
+      },
+      {
+        name: "Tailwind CSS",
+        icon: <SiTailwindcss />,
+        iconColor: "#38BDF8",
+      },
+      {
+        name: "MongoDB",
+        icon: <SiMongodb />,
+        iconColor: "limegreen",
       },
     ],
   },
@@ -258,6 +288,7 @@ export const projects = [
     description: `A modern, responsive website for the BioTech Research Institute, designed to showcase ongoing research, achievements, team members, and key updates in biotechnology. 
                   Built using HTML, CSS, and JavaScript, this website serves as a central hub for researchers, collaborators, and the public to stay informed about groundbreaking advancements in the field.`,
     demoLink: "https://deepblue-dot.github.io/BioTech-WebSite/",
+    githubLink: "https://github.com/DeepBlue-dot/BioTech-WebSite",
     stack: [
       {
         name: "HTML",
@@ -273,7 +304,11 @@ export const projects = [
         name: "JavaScript",
         icon: <SiJavascript color="#f7df1e" />,
         iconColor: "green",
-      }
+      },
+      {
+        name: "Figma",
+        icon: <FaFigma color="#F24E1E" />,
+      },
     ],
   },
   {
@@ -299,6 +334,7 @@ export const projects = [
     category: "Apps",
     description: `The ID Card Replacement (Appointment) System for AASTU Students aims to streamline the process of replacing lost or damaged ID cards at AASTU. The current process is often cumbersome and time-consuming for both students and administrative staff. This system aims to modernize and simplify the process, improving the overall student experience and administrative efficiency.`,
     demoLink: "https://github.com/DeepBlue-dot/ID-card-Replacement-system/",
+    githubLink: "https://github.com/DeepBlue-dot/ID-card-Replacement-system/",
     stack: [
       {
         name: "Java",
@@ -325,13 +361,12 @@ export const projects = [
       "https://i.pinimg.com/originals/b3/35/02/b33502e465346ace2a7f1df203d851a3.jpg",
     ],
     category: "Apps",
-    description: `Elevate engagement and knowledge retention with our Quiz App 
-                    Development project. Seamlessly crafted for interactive learning 
-                    experiences, our app offers customizable quizzes, real-time feedback, 
-                    and captivating visuals. Empower users to test their knowledge anytime,
-                     anywhere, fostering a dynamic learning environment tailored to their 
-                     needs.`,
+    description: `A Flutter Quiz App is a lightweight, cross‑platform mobile project that presents shuffled multiple‑choice questions from JSON, 
+                  shows real‑time correct/incorrect feedback, and tracks your score with a progress bar. 
+                  Built with Flutter’s Material widgets and simple state management, 
+                  it offers smooth animations and a summary screen to review your results or retry.`,
     demoLink: "https://github.com/DeepBlue-dot/futter-first-app",
+    githubLink: "https://github.com/DeepBlue-dot/futter-first-app",
     stack: [
       {
         name: "Flutter",
@@ -348,105 +383,30 @@ export const projects = [
 export const experiences = [
   {
     id: 0,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/neurobit.jpeg?alt=media&token=1cacbb7b-e5ea-4efb-9b3d-f5a31b9564ad",
-    role: "Frontend Engineer Intern",
-    company: "Neurobit",
-    date: "June 2023 - Nov 2023",
-    desc: "Enhanced user experiences on Neurobit PSG & Hybrid, Portals by resolving bugs & reduced load time by 40%. Built Neurobit Analytics portal using React Js with seamless interaction of REST APIs using AXIOS optimized with React Query. Refactored previous code to TypeScript, updated with new dependency and integrated Vite with Jest for Unit Testing.",
+    img: "./images/Ethiopian-Federal-Police-logo.jpg",
+    role: "Frontend Intern",
+    company: "Ethiopian Federal Police",
+    date: "Summers 2021 - 2023",
+    desc: "Interned over three consecutive summers, building and maintaining frontend tools using Angular, React, and Tailwind CSS; collaborated with team members using Git for version control.",
     skills: [
-      "ReactJS",
-      "Redux",
-      "NodeJs",
-      "Material UI",
-      "HTML",
-      "CSS",
-      "JavaScript",
+      "Angular",
+      "React",
+      "Tailwind CSS",
+      "Git",
     ],
-    doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Screenshot%20from%202024-01-25%2022-38-31.png?alt=media&token=2785903f-1a4e-41f5-afd2-6adcfe56d058",
+    doc: "",
   },
   {
     id: 1,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
-    role: "DevOps & Fullstack Engineering Intern",
-    company: "Flipr Inovations Pvt. Ltd.",
-    date: "Aug 2023 - Oct 2023",
-    desc: "Built Flipr Connect Platforms using React Js integrated GraphQL with AXIOS, created High level Design and Figma design. Built Backend with GraphQL and Node JS and connected with MongoDb - Reducing API calls by 20%. Dockerized and automated with Kubernetes & Jenkins CI/CD deployed in AWS-EC2 added Prometheus & Grafana for monitoring.",
+    img: "./images/Skill-Spectrum-logo.jpg",
+    role: "Python Instructor",
+    company: "Skill-Spectrum",
+    date: "September 2021 - June 2023",
+    desc: "Taught Python programming to university students, covering fundamentals, data structures, and project-based learning. Developed curriculum modules, delivered lectures and hands-on labs, assessed student progress, and provided mentorship, leading to improved coding proficiency and successful project completions.",
     skills: [
-      "Docker",
-      "Terraform",
-      "AWS",
-      "EC2",
-      "Portainer",
-      "Nginx",
-      "JavaScript",
-      "TypeScript",
-      "Node Js",
-      " Next Js",
+      "Python",
     ],
-    doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/1696514649120.jpeg?alt=media&token=e7f6757b-edfa-4138-a692-d6709eeef3e2",
-  },
-  {
-    id: 2,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Rudraksha.jpeg?alt=media&token=8f83f41e-d0a1-486f-9c7f-dd4cd1d09e8d",
-    role: "Android Developer Intern",
-    company: "Rudraksha Welffare Foundation",
-    date: "June 2021 - Oct 2021",
-    desc: "• Built RudraShakti - Astrologer App, with MVVM Architecture using Java and Android Studio integrating Firebase SDK. Created One to One video call integration with Socket.IO and Firebase cloud functions and integrated with Retrofit. Created Low Level Design and converted Figma design to XML code.",
-    skills: [
-      "Android",
-      "Java",
-      "Kotlin",
-      "XML",
-      "Node Js",
-      "Cloud Firestore",
-      "Firebase",
-      "Figma",
-    ],
-    doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/WhatsApp%20Images%202023-05-05%20at%2012.07.39%20AM.jpeg?alt=media&token=9f0e1648-568b-422d-bd0b-1f125f722245",
-  },
-  {
-    id: 3,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
-    role: "Fullstack Externship",
-    company: "Flipr",
-    date: "June 2023 - July 2023",
-    desc: "Built an employee management full stack web app used Docker and deployed on AWS ec2. I was the top performer in the program.",
-    skills: [
-      "ReactJS",
-      "Redux",
-      "NodeJs",
-      "Material UI",
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Docker",
-      "AWS",
-      "MongoDB",
-    ],
-    doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/1691181448873.jpeg?alt=media&token=ee85eb8f-7247-43cd-9a1d-ce9f58ea62a6",
-  },
-  {
-    id: 4,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/gdsc.jpeg?alt=media&token=c162329c-efaa-4be8-a173-8d3f4c48ea70",
-    role: "Android Developer",
-    company: "DSC KIIT",
-    date: "Nov2021 - Present",
-    desc: "As an Android developer at the Google Developers Student Club (GDCS), I have had the opportunity to work on exciting projects and collaborate with talented developers who share my passion for technology. Through my involvement with GDCS, I have also had the opportunity to host and participate in numerous events, including hackathons, study jams, and workshops.",
-    skills: [
-      "Leadership",
-      "Mobile Application Development",
-      "Kotlin",
-      "XML",
-      "Figma",
-    ],
-  },
-  {
-    id: 5,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/girlScript.jpeg?alt=media&token=e656a621-cf3c-4230-bf0f-e74b4cec6035",
-    role: "Open Source Contributor ",
-    company: "GirlScript Summer of Code",
-    date: "May 2023 - Present",
-    desc: "Contributed to different open-source projects and learn from industry experts",
+    doc: "./docs/certif.pdf",
   },
 ];
 

@@ -1,9 +1,8 @@
 import "./ProjectsCard.css";
-import { AiOutlineShareAlt } from "react-icons/ai";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import { FaGithub } from "react-icons/fa6";
 
 function ProjectsCard({
   title,
@@ -11,6 +10,7 @@ function ProjectsCard({
   description,
   stack,
   demoLink,
+  githubLink,
   className,
 }) {
   // Slider settings configuration
@@ -53,9 +53,10 @@ function ProjectsCard({
                 {stack.map((list, index) => (
                   <div className="stack-box" key={index}>
                     <div className="stack-icon-container">
-                      <span 
-                        className="flex-center stack-icon" 
-                        style={{ color: list.iconColor }}>
+                      <span
+                        className="flex-center stack-icon"
+                        style={{ color: list.iconColor }}
+                      >
                         {list.icon}
                       </span>
                       <span className="stack-name">{list.name}</span>
@@ -66,11 +67,22 @@ function ProjectsCard({
             </div>
           </div>
           <div className="flex-center buttons-container">
-            <a href={demoLink} target="_blank" className="btn primary" rel="noreferrer">
+            <a
+              href={demoLink}
+              target="_blank"
+              className="btn primary"
+              rel="noreferrer"
+            >
               Demo
             </a>
             <div className="flex-center btn btn-share">
-              <AiOutlineShareAlt />
+              <a
+                href={githubLink}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub />
+              </a>
             </div>
           </div>
         </div>
