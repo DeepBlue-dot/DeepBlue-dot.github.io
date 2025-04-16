@@ -3,7 +3,15 @@ import { MdOutlineAlternateEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin, FaTelegram } from "react-icons/fa";
 import { DiReact } from "react-icons/di";
-import { SiExpress, SiJsonwebtokens, SiMongoose, SiNextdotjs, SiPrisma, SiSocketdotio, SiWebrtc } from "react-icons/si";
+import {
+  SiExpress,
+  SiJsonwebtokens,
+  SiMongoose,
+  SiNextdotjs,
+  SiPrisma,
+  SiSocketdotio,
+  SiWebrtc,
+} from "react-icons/si";
 
 import {
   FaHtml5,
@@ -28,11 +36,8 @@ import {
 } from "react-icons/si";
 import { DiJava, DiTerminal } from "react-icons/di";
 
-import client1 from "./assets/client-1.jpeg";
-import client2 from "./assets/client-2.jpeg";
-import client3 from "./assets/client-3.jpeg";
-import client4 from "./assets/client-4.jpeg";
-import client5 from "./assets/client-5.jpeg";
+import skill_share_certificate from "./assets/certif_page-0001.jpg";
+import { VscJson } from "react-icons/vsc";
 
 export const tabs = [
   { name: "About", id: "hero" },
@@ -109,7 +114,7 @@ export const skills = [
       },
       {
         skill: "Prisma",
-        icon: <SiPrisma />
+        icon: <SiPrisma />,
       },
     ],
   },
@@ -180,7 +185,7 @@ export const projects = [
       {
         name: "Prisma",
         icon: <SiPrisma />,
-      }
+      },
     ],
   },
   {
@@ -194,7 +199,7 @@ export const projects = [
       "https://raw.githubusercontent.com/DeepBlue-dot/PicShare/refs/heads/main/assets/ScreenShot%20Tool%20-20250415050900.png",
       "https://raw.githubusercontent.com/DeepBlue-dot/PicShare/refs/heads/main/assets/ScreenShot%20Tool%20-20250415050921.png",
       "https://raw.githubusercontent.com/DeepBlue-dot/PicShare/refs/heads/main/assets/ScreenShot%20Tool%20-20250415050932.png",
-      "https://raw.githubusercontent.com/DeepBlue-dot/PicShare/refs/heads/main/assets/ScreenShot%20Tool%20-20250415051011.png"
+      "https://raw.githubusercontent.com/DeepBlue-dot/PicShare/refs/heads/main/assets/ScreenShot%20Tool%20-20250415051011.png",
     ],
     category: "Web",
     description: `A full-stack web application inspired by Pinterest, built with React (frontend), Node.js (backend), and MongoDB (database). This project allows users to create, view, like, and save posts with images, as well as organize them into boards.`,
@@ -221,13 +226,13 @@ export const projects = [
         iconColor: "limegreen",
       },
       {
-        name: "MongoDB",
+        name: "Mongoose",
         icon: <SiMongoose />,
         iconColor: "#000000",
       },
       {
         name: "Jsonwebtokens",
-        icon: <SiJsonwebtokens />        ,
+        icon: <SiJsonwebtokens />,
       },
     ],
   },
@@ -267,6 +272,11 @@ export const projects = [
         icon: <SiMongodb />,
         iconColor: "limegreen",
       },
+      {
+        name: "Mongoose",
+        icon: <SiMongoose />,
+        iconColor: "#000000",
+      },
     ],
   },
   {
@@ -282,7 +292,7 @@ export const projects = [
       "https://raw.githubusercontent.com/DeepBlue-dot/BioTech-WebSite/refs/heads/main/resource/design/done/ScreenShot%20Tool%20-20250415050224.png",
       "https://raw.githubusercontent.com/DeepBlue-dot/BioTech-WebSite/refs/heads/main/resource/design/done/ScreenShot%20Tool%20-20250415050249.png",
       "https://raw.githubusercontent.com/DeepBlue-dot/BioTech-WebSite/refs/heads/main/resource/design/done/ScreenShot%20Tool%20-20250415050300.png",
-      "https://raw.githubusercontent.com/DeepBlue-dot/BioTech-WebSite/refs/heads/main/resource/design/done/ScreenShot%20Tool%20-20250415050314.png"
+      "https://raw.githubusercontent.com/DeepBlue-dot/BioTech-WebSite/refs/heads/main/resource/design/done/ScreenShot%20Tool%20-20250415050314.png",
     ],
     category: "Web",
     description: `A modern, responsive website for the BioTech Research Institute, designed to showcase ongoing research, achievements, team members, and key updates in biotechnology. 
@@ -351,7 +361,7 @@ export const projects = [
       {
         name: "MySQL",
         icon: <SiMysql color="#4479A1" />,
-      }
+      },
     ],
   },
   {
@@ -373,6 +383,10 @@ export const projects = [
         icon: <SiFlutter color="#02569B" />,
       },
       {
+        name: "JSON",
+        icon: <VscJson color="#000000" />,
+      },
+      {
         name: "Figma",
         icon: <FaFigma color="#F24E1E" />,
       },
@@ -383,17 +397,12 @@ export const projects = [
 export const experiences = [
   {
     id: 0,
-    img: "./images/Ethiopian-Federal-Police-logo.jpg",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Federal_Police_Commission_of_Ethiopia_Coat_of_Arms_and_Logo.png/250px-Federal_Police_Commission_of_Ethiopia_Coat_of_Arms_and_Logo.png",
     role: "Frontend Intern",
     company: "Ethiopian Federal Police",
     date: "Summers 2021 - 2023",
     desc: "Interned over three consecutive summers, building and maintaining frontend tools using Angular, React, and Tailwind CSS; collaborated with team members using Git for version control.",
-    skills: [
-      "Angular",
-      "React",
-      "Tailwind CSS",
-      "Git",
-    ],
+    skills: ["Angular", "React", "Tailwind CSS", "Git"],
     doc: "",
   },
   {
@@ -403,69 +412,33 @@ export const experiences = [
     company: "Skill-Spectrum",
     date: "September 2021 - June 2023",
     desc: "Taught Python programming to university students, covering fundamentals, data structures, and project-based learning. Developed curriculum modules, delivered lectures and hands-on labs, assessed student progress, and provided mentorship, leading to improved coding proficiency and successful project completions.",
-    skills: [
-      "Python",
-    ],
+    skills: ["Python"],
     doc: "./docs/certif.pdf",
   },
 ];
 
-export const clients = [
+export const achievements = [
   {
-    image: client1,
-    name: "Samuel Eze",
-    review: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-           veniam, quis nostrud exercitation ullamco laborisveniam, quis nostrud 
-           exercitation ullamco laboris`,
-  },
-  {
-    image: client2,
-    name: "Richael Linda",
-    review: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`,
-  },
-  {
-    image: client3,
-    name: "Gloria Chiwendu",
-    review: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-           veniam, quis nostrud exercitation ullamco laborisveniam, quis nostrud 
-           exercitation ullamco laborisveniam, quis nostrud exercitation ullamco laboris`,
-  },
-  {
-    image: client4,
-    name: "Precious Stone",
-    review: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`,
-  },
-  {
-    image: client5,
-    name: "Ndubisi John",
-    review: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`,
+    image: skill_share_certificate,
+    review: `Certifies teaching proficiency in Python and related tools, with a focus on delivering structured programming education and mentoring students.`,
+    doc: "./docs/certif.pdf",
   },
 ];
 
 export const contactOptions = [
   {
     title: "Email",
-    value: "mradinuba@gmail.com",
+    value: "yeabsira710@gmail.com",
     icon: <MdOutlineAlternateEmail />,
   },
   {
     title: "Phone Number",
-    value: "+2348149121918",
+    value: "+251948168057",
     icon: <IoCallOutline />,
   },
   {
     title: "Address",
-    value: "Gwarinpa, Abuja, Nigeria",
+    value: "Ethiopia, Addis Ababa",
     icon: <IoLocationOutline />,
   },
 ];

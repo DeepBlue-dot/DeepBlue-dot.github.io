@@ -1,71 +1,46 @@
+/* Achievements.css */
 #achievements .Achievements-container {
-    margin-top: 20px
+    margin-top: 20px;
 }
 
 #achievements .slick-track {
-    display: flex!important;
-    gap: 20px
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
-.slick-prev,.slick-next {
-    display: none!important
+.slick-prev,
+.slick-next {
+    display: none;
 }
 
 #achievements .slick-slide {
-    height: inherit!important;
+    height: inherit;
     background: var(--bg-accent);
-    padding: 40px 30px;
+    padding: 20px 30px;
     border-radius: 10px;
-    border: .5px solid var(--border-primary);
+    border: 0.5px solid var(--border-primary);
     display: flex;
-    align-items: stretch;
     flex-direction: column;
-    transition: var(--transition)
-}
-
-#achievements .slick-slide:hover {
-    background: var(--bg-muted)
-}
-
-#achievements .slick-slide > div {
-    flex: 1;
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
-    flex-direction: column
+    max-width: 600px;
 }
 
 #achievements .profile {
-    width: 4rem;
-    height: 4rem;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
-    transition: var(--transition)
-}
-
-#achievements .profile:hover {
-    opacity: .5
 }
 
 #achievements .content {
     flex: 1;
-    padding: 20px 0
-}
-
-#achievements .stars-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: var(--warning)
+    padding: 20px 0;
 }
 
 #achievements .buttons-container {
     justify-content: flex-end;
     gap: 10px;
-    margin-top: 20px
-}
-
-#achievements .buttons-container .btn:hover {
-    background: transparent
+    margin-top: 20px;
 }
