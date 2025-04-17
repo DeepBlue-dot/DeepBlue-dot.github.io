@@ -9,8 +9,8 @@ function About() {
 
     useEffect(()=>{
         const timeOutId =setTimeout(()=>{
-            setClients(2);
-            setExperience(1);
+            setClients(0);
+            setExperience(0);
             setProjects(10)
         }, 3000)
         return () => clearTimeout(timeOutId)
