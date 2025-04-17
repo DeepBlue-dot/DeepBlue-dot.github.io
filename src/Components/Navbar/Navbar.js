@@ -7,7 +7,6 @@ import { HiMenu } from "react-icons/hi";
 import { FaTimes } from "react-icons/fa";
 import { MdDownload } from "react-icons/md";
 import SocialHandles from "../../Commons/SocialHandles/SocialHandles.js";
-import resume from "../../assets/Resume.pdf"
 
 function Navbar() {
   const [openSidebar, setOpenSidebar] = useState(false);
@@ -50,7 +49,7 @@ function Navbar() {
       </div>
       <SocialHandles />
       <div className="box flex-center buttons">
-        <a href={resume} target="_blank" className="btn primary contact-btn flex-center" rel="noreferrer">
+        <a href='./docs/Yeabsira_Fikadu_resume.pdf' target="_blank" className="btn primary contact-btn flex-center" rel="noreferrer">
           <MdDownload />
           <span>Resume</span>
         </a>

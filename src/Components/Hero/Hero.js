@@ -1,7 +1,6 @@
 import "./Hero.css";
 import { Link } from "react-scroll";
 import me from "../../assets/my-profile-pic-2.png";
-import resume from "../../assets/Resume.pdf";
 import About from "../../Commons/About/About";
 
 function Hero() {
@@ -22,7 +21,7 @@ function Hero() {
           </p>
           <div className="flex-center buttons-wrapper">
             <a
-              href={resume}
+              href='./docs/Yeabsira_Fikadu_resume.pdf'
               target="_blank"
               className="btn primary"
               rel="noreferrer"
