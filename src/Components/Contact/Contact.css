@@ -84,7 +84,8 @@ input {
 }
 
 #contact .bottom {
-    margin-top: 40px
+    margin-top: 40px;
+    flex-direction: column;
 }
 
 #contact .btn {
