@@ -3,6 +3,7 @@ import { MdOutlineAlternateEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin, FaTelegram } from "react-icons/fa";
 import { DiReact } from "react-icons/di";
+import { FaCloud } from "react-icons/fa";
 import {
   SiExpress,
   SiJsonwebtokens,
@@ -145,6 +146,28 @@ export const skills = [
   },
 ];
 export const projects = [
+  {
+    id: 0,
+    title: "StoreEase - Single-Vendor E-commerce",
+    images: [
+      "https://via.placeholder.com/800x500?text=StoreEase+E-commerce+Preview",
+    ],
+    category: "Web",
+    description: `A full-stack single-vendor e-commerce MVP built with Next.js 15, Prisma ORM, and NextAuth. 
+                Customers can browse, search, and filter products, manage carts, and place COD orders. 
+                Admins can manage products, inventory, users, and order statuses. 
+                Features include authentication, order tracking, and product ratings for a modern, scalable e-commerce solution.`,
+    demoLink: "https://store-ease-alpha.vercel.app",
+    githubLink: "https://github.com/DeepBlue-dot/store-ease",
+    stack: [
+      { name: "Next.js", icon: <SiNextdotjs />, iconColor: "#000000" },
+      { name: "Prisma ORM", icon: <SiPrisma /> },
+      { name: "NextAuth", icon: <SiJsonwebtokens /> },
+      { name: "ShadCN UI", icon: <FaCss3Alt color="#1572B6" /> },
+      { name: "Cloudinary", icon: <FaCloud color="#3448C5" /> },
+      { name: "PostgreSQL", icon: <SiMysql color="#336791" /> },
+    ],
+  },
   {
     id: 1,
     title: "FilmLane",
@@ -396,24 +419,45 @@ export const projects = [
 
 export const experiences = [
   {
-    id: 0,
+    id: 1,
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Federal_Police_Commission_of_Ethiopia_Coat_of_Arms_and_Logo.png/250px-Federal_Police_Commission_of_Ethiopia_Coat_of_Arms_and_Logo.png",
     role: "Frontend Intern",
     company: "Ethiopian Federal Police",
-    date: "Summer 2023",
+    date: "Summer 2024",
     desc: "Interned over the summer, building and maintaining frontend tools using Angular, React, and Tailwind CSS; collaborated with team members using Git for version control.",
     skills: ["Angular", "React", "Tailwind CSS", "Git"],
     doc: "",
   },
   {
-    id: 1,
-    img: "./images/Skill-Spectrum-logo.jpg",
-    role: "Python Instructor",
-    company: "Skill-Spectrum",
-    date: "September 2021 - June 2023",
-    desc: "Taught Python programming to university students, covering fundamentals, data structures, and project-based learning. Developed curriculum modules, delivered lectures and hands-on labs, assessed student progress, and provided mentorship, leading to improved coding proficiency and successful project completions.",
-    skills: ["Python"],
-    doc: "./docs/certif.pdf",
+    id: 2,
+    img: "https://play-lh.googleusercontent.com/tx1qrpGe0b6uBTadJqLqF64_HW-ehqnH_00J5L5CxjtDPu84eDgnDvSD5d9OTHe3Suw", // or replace with a public logo/image
+    role: "Hackathon Finalist",
+    company: "National ID Hackathon",
+    date: "July – August 2025",
+    desc: `Participated as a finalist in the National ID Hackathon organized by the Ethiopian Digital ID Program. 
+         Collaborated in a 3-member team to design and build a secure data exchange system inspired by Estonia’s X-Road architecture. 
+         The project focused on enabling seamless and consent-based data sharing between government and private institutions.`,
+    skills: [
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "API Design",
+      "Digital Identity",
+      "System Architecture",
+    ],
+    doc: "", // you can link to a certificate or project demo if available
+  },
+  {
+    id: 3,
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT4JNiHdgto6bnjOOGkW4z7WPuanvW72cNIw&s", // 🔗 Replace with the company’s real logo URL if available
+    role: "Full-Stack Developer Intern",
+    company: "Efuye Gela",
+    date: "Summer 2025",
+    desc: `Developed a full-stack URL shortener platform with advanced analytics during my internship at Efuye Gela. 
+         Implemented features such as click tracking, expiration handling, and user-specific dashboards using Next.js, Prisma, and PostgreSQL. 
+         Gained hands-on experience in building scalable APIs, optimizing database performance, and deploying production-ready applications.`,
+    skills: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Tailwind CSS"],
+    doc: "", // You can link a certificate or internship letter PDF here later
   },
 ];
 
@@ -422,6 +466,12 @@ export const achievements = [
     image: skill_share_certificate,
     review: `Certifies teaching proficiency in Python and related tools, with a focus on delivering structured programming education and mentoring students.`,
     doc: "./docs/certif.pdf",
+  },
+  {
+    image: skill_share_certificate,
+    review:`Selected as a finalist in Ethiopia’s National ID Hackathon for developing a secure data exchange system inspired by Estonia’s X-Road architecture. 
+                Recognized for innovative use of digital identity, API security, and data interoperability.`,
+     doc: "./docs/certif.pdf",
   },
 ];
 
@@ -470,7 +520,7 @@ export const footer = [
   {
     title: "Explore",
     routes: [
-      { name: "About", id: "hero" },       // Updated from "About Me" to "About" with hero ID
+      { name: "About", id: "hero" }, // Updated from "About Me" to "About" with hero ID
       { name: "Skill", id: "skill" },
     ],
   },
