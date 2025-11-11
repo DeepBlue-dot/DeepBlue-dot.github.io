@@ -38,6 +38,7 @@ import {
 import { DiJava, DiTerminal } from "react-icons/di";
 
 import skill_share_certificate from "./assets/certif_page-0001.jpg";
+import fayda_certificate from "./assets/Screenshot 2025-11-11 204954.png";
 import { VscJson } from "react-icons/vsc";
 
 export const tabs = [
@@ -470,22 +471,15 @@ export const experiences = [
 
 export const achievements = [
   {
-    id: 4,
-    title: "National ID Hackathon Finalist",
-    date: "August 2025",
-    description: `Selected as a finalist in Ethiopia’s National ID Hackathon for developing a secure data exchange system inspired by Estonia’s X-Road architecture. 
-Recognized for innovative use of digital identity, API security, and data interoperability.`,
     image: skill_share_certificate,
-    link: "", // optional link to announcement or certificate
+    review: `Certifies teaching proficiency in Python and related tools, with a focus on delivering structured programming education and mentoring students.`,
+    doc: "./docs/certif.pdf",
   },
     {
-    id: 4,
-    title: "National ID Hackathon Finalist",
-    date: "August 2025",
-    description: `Selected as a finalist in Ethiopia’s National ID Hackathon for developing a secure data exchange system inspired by Estonia’s X-Road architecture. 
-Recognized for innovative use of digital identity, API security, and data interoperability.`,
-    image: skill_share_certificate,
-    link: "", // optional link to announcement or certificate
+    image: fayda_certificate,
+    review: `Built a decentralized, consent-driven data exchange platform inspired by Estonia’s X-Road during the National ID Hackathon. 
+                The system allows institutions to securely share verified data using a middle-layer API architecture with granular access control.`,
+    doc: "./docs/certif.pdf",
   },
 ];
 
