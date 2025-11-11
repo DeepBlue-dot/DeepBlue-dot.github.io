@@ -150,7 +150,15 @@ export const projects = [
     id: 0,
     title: "StoreEase - Single-Vendor E-commerce",
     images: [
-      "https://via.placeholder.com/800x500?text=StoreEase+E-commerce+Preview",
+      "https://raw.githubusercontent.com/DeepBlue-dot/store-ease/refs/heads/main/about/ScreenShot%20Tool%20-20251111145852.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/store-ease/refs/heads/main/about/Screenshot.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/store-ease/refs/heads/main/about/Screenshot-6.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/store-ease/refs/heads/main/about/Screenshot-5.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/store-ease/refs/heads/main/about/ScreenShot%20Tool%20-20251111150311.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/store-ease/refs/heads/main/about/ScreenShot%20Tool%20-20251111150332.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/store-ease/refs/heads/main/about/Screenshot-2.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/store-ease/refs/heads/main/about/Screenshot-3.png",
+      "https://raw.githubusercontent.com/DeepBlue-dot/store-ease/refs/heads/main/about/Screenshot-4.png",
     ],
     category: "Web",
     description: `A full-stack single-vendor e-commerce MVP built with Next.js 15, Prisma ORM, and NextAuth. 
@@ -442,10 +450,9 @@ export const experiences = [
       "TypeScript",
       "PostgreSQL",
       "API Design",
-      "Digital Identity",
       "System Architecture",
     ],
-    doc: "", // you can link to a certificate or project demo if available
+    doc: "",
   },
   {
     id: 3,
@@ -463,15 +470,22 @@ export const experiences = [
 
 export const achievements = [
   {
+    id: 4,
+    title: "National ID Hackathon Finalist",
+    date: "August 2025",
+    description: `Selected as a finalist in Ethiopia’s National ID Hackathon for developing a secure data exchange system inspired by Estonia’s X-Road architecture. 
+Recognized for innovative use of digital identity, API security, and data interoperability.`,
     image: skill_share_certificate,
-    review: `Certifies teaching proficiency in Python and related tools, with a focus on delivering structured programming education and mentoring students.`,
-    doc: "./docs/certif.pdf",
+    link: "", // optional link to announcement or certificate
   },
-  {
+    {
+    id: 4,
+    title: "National ID Hackathon Finalist",
+    date: "August 2025",
+    description: `Selected as a finalist in Ethiopia’s National ID Hackathon for developing a secure data exchange system inspired by Estonia’s X-Road architecture. 
+Recognized for innovative use of digital identity, API security, and data interoperability.`,
     image: skill_share_certificate,
-    review:`Selected as a finalist in Ethiopia’s National ID Hackathon for developing a secure data exchange system inspired by Estonia’s X-Road architecture. 
-                Recognized for innovative use of digital identity, API security, and data interoperability.`,
-     doc: "./docs/certif.pdf",
+    link: "", // optional link to announcement or certificate
   },
 ];
 
